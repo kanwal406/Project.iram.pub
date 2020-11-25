@@ -1,7 +1,7 @@
 ---
 - name: Creating User 
   hosts: all
-  task: 
+  tasks: 
     - name: Adding Useer 
       user: 
         name: coolkid
