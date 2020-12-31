@@ -2,8 +2,13 @@
 - name: Creating User 
   hosts: all
   tasks: 
-    - name: Adding Useer 
+    - name: Adding User 
       user: 
         name: coolkid
+        state: present
+
+    - name: installing tree
+      yum:
+        name: tree
         state: present
 ...
